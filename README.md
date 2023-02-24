@@ -2,7 +2,9 @@
 
 <img src=./Ion.svg width="20%">
 
-**PLEASE NOTE:** the present code is under active development and is still in beta versions 0.x.x. In general changes to the patch version (the third number) indicate backward compatible beta releases, but please be aware that file formats and APIs may change. Bug reports are also welcomed in the GitHub issues!
+The following project is aimed to extract diffusive paths from molecular dynamics simulations of solids.
+
+Code is under active development, please be aware that file formats and folders distributions may change. Bug reports are also welcomed in the GitHub issues!
 
 ## Installation
 
@@ -14,6 +16,7 @@ To install:
 
 ```bash
 $ git clone https://github.com/group-name/ColectiveDiffusions.git
+$ pip3 install -r requirements.txt
 ```
 
 ## Tutorial 
