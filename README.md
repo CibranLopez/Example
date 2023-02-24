@@ -43,6 +43,7 @@ The theory behind ColectiveDiffusions code is described in our preprint (1). If 
 ColectiveDiffusions is being developed by:
 
  - Cibrán López Álvarez
+ - ...
  - Claudio Cazorla Silva
 
 ## Contact, questions, and contributing
