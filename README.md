@@ -1,8 +1,5 @@
 # Collective diffusions
 
-The following project is aimed to extract diffusive paths from molecular dynamics simulations of solids.
-python3 cli.py identify_diffusion --MD_path examples
-
 <img src=./Ion.svg width="20%">
 
 **PLEASE NOTE:** the present code is under active development and is still in beta versions 0.x.x. In general changes to the patch version (the third number) indicate backward compatible beta releases, but please be aware that file formats and APIs may change. Bug reports are also welcomed in the GitHub issues!
