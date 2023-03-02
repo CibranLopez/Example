@@ -14,7 +14,7 @@ Please be aware that the code is under active development. Bug reports are also 
 
 Required modules:
 
-* Python >= 3.7
+* Python \geqslant 3.7
 
 To install:
 
