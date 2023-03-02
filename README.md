@@ -31,7 +31,7 @@ To extract diffusion paths from a simulation XDATCAR file located at examples fo
 python3 cli.py identify_diffusion --MD_path examples
 ```
 
-An \textit{ab initio} MD simulation based on density functional theory of non-stoichiometric $Li\textsubscript{7}La\textsubscript{3}Zr\textsubscript{2}O\textsubscript{12}$ (LLZO) fast-ion conductor at 400K is provided to run as an example:
+An *ab initio* MD simulation based on density functional theory of non-stoichiometric Li<sub>7</sub>La<sub>3</sub>Zr<sub>2</sub>O<sub>12</sub> (LLZO) fast-ion conductor at 400K is provided to run as an example:
  - [`examples/INCAR`](examples/INCAR): Basic parameters of the simulation (only **POTIM** and **NBLOCK** flags are considered).
  - [`examples/XDATCAR`](examples/XDATCAR): Concatenation of all simulated configurations (recorded each **NBLOCK** simulation steps).
  - [`examples/README.md`](examples/README.md): More specific information regarding these files.
