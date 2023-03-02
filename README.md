@@ -1,10 +1,14 @@
-# Collective diffusions
+# Collective Diffusions
 
 <img src=./Ion.svg width="20%">
 
-The following project is aimed to extract diffusive paths from molecular dynamics simulations of solids.
+Despite playing a central role in the design of high performance solid-state electrolytes (SSE), little is known about the processes governing ionic diffusion in these materials and the spatio-temporal correlations acting on migrating particles. Computer simulations can reproduce the trajectories of individual diffusing ions in real time with extraordinary accuracy, thus providing incredibly valuable atomistic data that in practice cannot be resolved by experiments.
 
-Code is under active development, please be aware that file formats and folders distributions may change. Bug reports are also welcomed in the GitHub issues!
+However, the identification of hopping events in computer simulations typically relies on active supervision and definition of arbitrary material-dependent geometrical parameters, thus frustrating high throughput screenings of diffusing paths and mechanisms across simulation databases and the assessment of many-diffusing-ion correlations.   
+
+Here, we introduce a novel approach for analysing ion hopping events in molecular dynamics (MD) simulations in a facile and totally unsupervised manner, what would allow the extraction of completely new descriptors related to these diffusions. Our approach relies on the k-means clustering algorithm and allows to identify with precision which and when particles diffuse in a simulation and the exact migrating paths that they follow as well.
+
+Please be aware that the code is under active development. Bug reports are also welcomed in the GitHub issues!
 
 ## Installation
 
@@ -27,7 +31,7 @@ To extract diffusion paths from a simulation XDATCAR file located at examples fo
 $ python3 cli.py identify_diffusion --MD_path examples
 ```
 
-A simulation of non-stoichiometric LLZO at 400K is provided to run an example:
+An \textit{ab initio} MD simulation based on density functional theory of non-stoichiometric Li\textsubscript{7}La\textsubscript{3}Zr\textsubscript{2}O\textsubscript{12} (LLZO) fast-ion conductor at 400K is provided to run as an example:
  - [`examples/INCAR`](examples/INCAR): Basic parameters of the simulation (only **POTIM** and **NBLOCK** flags are considered).
  - [`examples/XDATCAR`](examples/XDATCAR): Concatenation of all simulated configurations (recorded each **NBLOCK** simulation steps).
  - [`examples/README.md`](examples/README.md): More specific information regarding these files.
@@ -46,6 +50,6 @@ ColectiveDiffusions is being developed by:
  - ...
  - Claudio Cazorla Silva
 
-## Contact, questions, and contributing
+## Contact, questions and contributing
 
 If you have questions, please don't hesitate to reach out at cibran[dot]lopez[at]upc[dot]edu.
