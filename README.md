@@ -19,8 +19,8 @@ Required modules:
 To install:
 
 ```bash
-$ git clone https://github.com/group-name/ColectiveDiffusions.git
-$ pip3 install -r requirements.txt
+git clone https://github.com/group-name/ColectiveDiffusions.git
+pip3 install -r requirements.txt
 ```
 
 ### Basic network training
@@ -28,7 +28,7 @@ $ pip3 install -r requirements.txt
 To extract diffusion paths from a simulation XDATCAR file located at examples folder from the ColectiveDiffusions folder run:
 
 ```bash
-$ python3 cli.py identify_diffusion --MD_path examples
+python3 cli.py identify_diffusion --MD_path examples
 ```
 
 An \textit{ab initio} MD simulation based on density functional theory of non-stoichiometric Li\textsubscript{7}La\textsubscript{3}Zr\textsubscript{2}O\textsubscript{12} (LLZO) fast-ion conductor at 400K is provided to run as an example:
